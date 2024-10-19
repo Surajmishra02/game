@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><A></A>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1 id="h1"> bat ball stump game </h1>
+
+
+  <button class="choice"
+  onclick=" 
+  let computer_choice=choice();
+  let result=getresult(`bat` , computer_choice);
+  showresult(`bat`,computer_choice,result);
+ "> <img src="bat.jpg" class="bat"></button>
+
+
+  <button  class="choice"
+  onclick="
+  computer_choice=choice();
+  result=getresult(`ball`,computer_choice);
+  showresult(`ball`,computer_choice,result);
+  
+   "> <img src="ball2.jpeg" class="bat"></button>
+
+
+<button  class="choice"
+onclick="
+ computer_choice=choice();
+result=getresult(`stump`,computer_choice)
+showresult(`stump`,computer_choice,result);
+ "><img src="stump.jpeg" class="bat"></button> 
+ 
+
+
+<h1 id="a"></h1>
+<h1 id="b"></h1>
+<h1 id="c"></h1>
+<h1 id="d"></h1>
+</main>
+
+<script src="script.js"></script>
+
+<button id="i" onclick="localStorage.clear()
+resetscore( );">Reset</button>
+</body>
+</html>
